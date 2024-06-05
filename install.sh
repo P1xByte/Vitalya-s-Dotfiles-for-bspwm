@@ -1,5 +1,5 @@
 echo "Installing all packages..."
-sudo apt install rofi bspwm scrot alacritty skhkd polybar nitrogen
+sudo apt install pulseaudio pavucontrol rofi bspwm scrot alacritty skhkd polybar nitrogen
 
 echo "Making all folders..."
 mkdir ~/Desktop/ ~/Documents/ ~/Downloads/ ~/Music ~/Pictures ~/Videos 
