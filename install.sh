@@ -2,7 +2,7 @@ echo "Installing all packages..."
 sudo apt install pulseaudio pavucontrol rofi bspwm scrot alacritty skhkd polybar nitrogen
 
 echo "Making all folders..."
-mkdir ~/Desktop/ ~/Documents/ ~/Downloads/ ~/Music ~/Pictures ~/Videos 
+mkdir ~/Desktop/ ~/Documents/ ~/Downloads/ ~/Music ~/Pictures ~/Pictures/scrots/ ~/Videos 
 
 echo "Copy 'Wallpapers' folder"
 cp $PWD/Wallpapers/ ~/Pictures/
