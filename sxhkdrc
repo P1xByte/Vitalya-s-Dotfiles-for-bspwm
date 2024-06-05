@@ -1,0 +1,35 @@
+super + {_,shift + }Return
+  {alacritty, bspc node -s biggest.local}
+
+super + shift + {c,r}
+  bspc {quit, wm -r}
+
+super + {_,shift + }q
+  bspc node -{c,k}
+
+super + d
+  rofi -show drun
+
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -5%
+
+XF86AudioMute
+	amixer -q set Master toggle
+
+super + shift + Escape
+    pkill -USR1 -x sxhkd
+
+super + {1,2,3,4,5,6,7,8,9}
+	bspc desktop -f {1,2,3,4,5,6,7,8,9}
+
+super + shift + {1-9}
+	bspc node -d '^{1-9}'
+
+Print
+	sleep 1 && /usr/bin/scrot -s ~/Pictures/scrots/'scrot_%Y%m%d-%H%M%S_$wx$h.png' -e 'printf $f|xclip'
+
+super + {_,shift +}space
+	{bspc node -t floating,bspc node -t tiled}
