@@ -15,6 +15,9 @@ cp $PWD/sxhkdrc ~/.config/sxhkd/
 chmod 775 ~/.config/sxhkd/sxhkdrc
 cp $PWD/config.ini ~/.config/polybar/
 
+echo "Adding keyboard layout..."
+sudo localectl set-x11-keymap us,ru pc105 "" grp:alt_shift_toggle
+
 echo "Dotfiles installed. Installer by neoP1xel :))"
 
 
